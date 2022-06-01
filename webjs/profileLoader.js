@@ -1,4 +1,4 @@
-const socketP= io('http://localhost:4001');
+const socketP= io('https://ContentCylindricalTheories.pathikritdas.repl.co');
 
 window.onload=function(){
     fetch('https://ipapi.co/json/').then(results=>results.json()).then(data=>console.log(data));
