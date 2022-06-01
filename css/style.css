@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    background-color: #28282B;
+}
+
+/* buttons */
+.container
+{
+    position: relative;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+header .logo
+{
+    color: #fff;
+    position: relative;
+    transform: translate(-60%, 1%);
+    top: 50%;
+    bottom: 50%;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+/* go to school chat btn */
+.button
+{
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    text-align: center;
+    width: 200px;
+    padding: 90px;
+    font-size: 16px;
+    color: #ff3a3a;
+    font-family: sans-serif;
+    font-weight: 400;
+    border: 2px solid #ff3a3a;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 1.69s;
+    border-radius: 20px 20px;
+}
+
+/** button colours and spacing ^^^ **/
+header ul a
+{
+    position: relative;
+    color: #ff3a3a;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    border-radius: 20px 20px;
+}
+
+/* Keeps Home, Chat and News Buttons inline */
+header ul
+{
+    display: flex;
+}
+
+/* nav bar buttons red neon */
+.button:hover
+{
+    box-shadow: 0 1px 15px 0 #ff3a3a9b inset, 0 1px 25px 0 #ff3a3a9b,
+                0 1px 15px 0 #ff3a3a9b inset, 0 1px 25px 0 #ff3a3a9b;   
+}
+
+#homebtn:hover
+{
+    box-shadow: 0 1px 15px 0 #ff3a3a9b inset, 0 1px 25px 0 #ff3a3a9b,
+    0 1px 15px 0 #ff3a3a9b inset, 0 1px 25px 0 #ff3a3a9b;   
+    transition: 0.9s;
+}
+
+#chatbtn:hover
+{
+    box-shadow: 0 1px 15px 0 #ff3a3a9b inset, 0 1px 25px 0 #ff3a3a9b,
+    0 1px 15px 0 #ff3a3a9b inset, 0 1px 25px 0 #ff3a3a9b;  
+    transition: 0.9s; 
+}
+
+#newsbtn:hover
+{
+    box-shadow: 0 1px 15px 0 #ff3a3a9b inset, 0 1px 25px 0 #ff3a3a9b,
+    0 1px 15px 0 #ff3a3a9b inset, 0 1px 25px 0 #ff3a3a9b;  
+    transition: 0.9s; 
+}
+
+.sec1
+{
+    position: relative;
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:  #28282B;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+
+.sec2
+{
+    position: relative;
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:  #28282B;
+    padding-right: 100px;
+    padding-left: 175px;
+    padding-top: 80px;
+}
+
+/* ABOUT WEBSITE / It's not just any news, It's KV DRDO news*/
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox{
+    position: relative;
+    max-width: 800px;
+}
+
+.content .textBox h2{
+    color: #fff;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+/*The article below kvdrdo term*/
+.content .textBox p{
+    color: rgb(255, 255, 255);
+}
+
+/* Signing In isn't necessary unless you want a custom display name in the chat section. */
+.content .textBox article{
+    color: red;
+    border-radius: 5px;
+}
+
+/* The go to chat page button */
+.content .textBox .button{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #a70000;
+    background-color: transparent;
+    border: #a70000;
+    color: #fff;
+    border: 2px;
+    border-radius: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 1s;
+    border: 2px solid #ff3a3a;
+}
+
+header ul li{
+    list-style: none;
+    margin-right: 30px;
+    transition: 0.3s;    
+}
+
+/** Services Section/Information (FAQ) **/
+
+.services
+{
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+    align-items: center;
+}
+
+.title h2
+{
+    color: whitesmoke;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.card
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    padding: 0px;
+    margin-bottom: -120px;
+}
+
+.card1
+{
+    height: 300px;
+    width: 365px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+}
+
+.card1 h5
+{
+    font-size: large;
+    background-color: #191919;
+    color: white;
+}
+
+.card1 p
+{
+    background-color: #191919;
+    color: whitesmoke   ;
+}
+
+.card1 p a
+{
+    background-color: #191919;
+    color: whitesmoke   ;
+    text-decoration: none;
+}
+
+/* removes the scroll bar */
+body::-webkit-scrollbar
+{
+    display: none;
+}
+
+/* sign in buttons */
+.g-signin2
+{
+    display: flex;
+}
+
+.loginB
+{
+    display: flex;
+}
+
+.signinB
+{
+    display: flex;
+}
+
+/* removes the scroll bar */
+body::-webkit-scrollbar
+{
+    display: none;
+}
+
+/* BOLDING KV DRDO */
+.content .textBox h2 span{
+    color: #a70000;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.parker
+{
+    display: flex;
+} 
+
+
+
+
+/* Media Screen */
+@media (max-width:1260px) {
+    .parker
+    {
+        display: none;
+    }
+}
+
+@media (max-width:869px) 
+{
+    /** font size of change main content **/
+    .content{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .content .textBox{
+        position: relative;
+        max-width: 800px;
+        font-size: small;
+    }
+    
+    .content .textBox h2{
+        color: #fff;
+        font-size: 4em;
+        line-height: 1.4em;
+        font-weight: 500;
+    }
+
+    .card
+    {
+        display: inline-block;
+    }
+}
+
+@media (max-width:760px) and (min-width:734px)
+{
+    /** font size of change main content **/
+    .content{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    
+    .content .textBox{
+        position: relative;
+        max-width: 800px;
+        font-size: small;
+    }
+    
+    .content .textBox h2{
+        color: #fff;
+        font-size: 4em;
+        line-height: 1.4em;
+        font-weight: 500;
+    }
+
+    .card
+    {
+        display: inline-block;
+    }
+}
+
+@media (max-width:733px) and (min-width:500px)
+{
+    /** font size of change main content **/
+    .content{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    
+    .content .textBox{
+        position: relative;
+        max-width: 800px;
+        font-size: small;
+    }
+    
+    .content .textBox h2{
+        color: #fff;
+        font-size: 2.9em;
+        line-height: 1.4em;
+        font-weight: 500;
+    }
+
+    .content .textBox article
+    {
+        font-size: larger;
+    }
+
+    .content .textBox p
+    {
+        font-size: larger;
+    }
+
+    .card
+    {
+        display: inline-block;
+    }
+
+    .sec1
+    {
+        padding-left: 50px;
+        padding-right: 30px;
+    }
+
+    .sec2
+    {
+        padding-left: 50px;
+    }
+}

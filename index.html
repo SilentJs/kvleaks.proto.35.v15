@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="UTF-8">
+        <title rel="stylesheet">kvdrdo-unofficial</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script defer src="webjs/socket.io.js"></script>
+        <script defer src="webjs/index.js"></script>
+        <script defer src="https://apis.google.com/js/platform.js" async defer></script>
+        <meta name="google-signin-client_id" content="775875900950-0bbipabg64dbtfbrchtrbco7qortlhtf.apps.googleusercontent.com">
+    </head>
+    
+    <body>
+        <section class="sec1">
+
+            <header>
+                <!-- buttons -->
+                <a href="#" class="logo">NEWs</a>
+                <div class="navbar">
+                    <ul class="headerbtns">
+                        <li><a href="#" id="homebtn">Home</a></li>
+                        <li><a href="chat.html" id="chatbtn">Chat</a></li>
+                        <li><a href="news.html" id="newsbtn">News</a></li>
+                        
+                        <!-- <a class="loginB" href="/login.html">Login</a> -->
+                        <a class="signinB" href="#" onclick="signOut();localStorage.clear();">Sign Out</a>
+                    </ul>
+                </div>
+
+            </header>
+
+            <div class="content">
+                <div class="textBox">
+                    <h2>It's not just any news</a><br>It's<span> KV DRDO</span> news</h2><br><br>
+                    <div class="g-signin2" data-onsuccess="onSignIn">Google Signin (Enable JavaScript to Signin)</div>
+                    <br><article>Signing In isn't necessary unless you want a custom display name in the chat section.</article>
+                    <br><p>We also have a full school chat section on our website, an about us section <br> and memes section make sure to read the rules before chatting or posting news</p>
+                    <a class="button" href="chat.html">Go to School Chat</a>
+                </div>
+
+                <div class="parker">
+                    <img id="parker" src="images/parker.png"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Section-->
+        <section class="sec2">
+            <div class="service">
+                <div class="title">
+                    <h2>Information (FAQ)</h2>
+                </div>
+                <div class="card">
+                    <div class="card1">
+                        <h5>Chat</h5>
+                        <div class="pra">
+                            <p><br>On this website we have a chat seciton and not any ordinary chat section you can literally chat with the whole school just put your name (not irl one obviously) and start chatting.</p>
+                            
+                            <p style="text-align: center;">
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card1">
+                        <h5>Chat</h5>
+                        <div class="pra">
+                            <p><br>On this website we have a chat seciton and not any ordinary chat section you can literally chat with the whole school just put your name (not irl one obviously) and start chatting.</p>
+                            
+                            <p style="text-align: center;">
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card1">
+                        <h5>Chat</h5>
+                        <div class="pra">
+                            <p><br>On this website we have a chat seciton and not any ordinary chat section you can literally chat with the whole school just put your name (not irl one obviously) and start chatting.</p>
+                            
+                            <p style="text-align: center;">
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </section>
+    </body>
+</html>

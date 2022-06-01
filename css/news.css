@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.postSec::-webkit-scrollbar{
+  display: none;
+}
+
+:root{
+  --primary-color:#579ffb;  
+  --primary-color-hover:#4193ff;
+  --primary-background:#fff;
+  --primary-font-color:#fff;
+  --secondary-color:#2180fc;
+  --primary-border-color:black;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+
+.navmain{
+  color: var(--primary-font-color);
+  position: fixed;
+  background:var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  top: -3px;
+  height: 25px;
+  width: 100%;
+  margin-left: -7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.navmain a{
+  border-radius: 0px 10px 10px 0px;
+  border-right: 1px var(--primary-color) solid;
+}
+.navmain p{
+  display: none;
+  font-weight: 800;
+}
+.navmain a{
+  color: var(--primary-font-color);
+  padding-left: 20px;
+  padding-right: 20px;
+  background: transparent;
+  transition: 0.3s;
+  font-size: 18px;
+}
+.navmain a:hover{
+  background:var(--primary-color-hover);
+}
+.navmain gg{
+  margin-left: 10px;
+}
+.postSec{
+  position: absolute;
+  top:20px;
+  max-width: 1700px;
+  max-height: 900px;
+  overflow-y: scroll;
+  margin-left:-20px;
+  margin-right: 10px;
+}
+.post{
+  color:var(--primary-font-color);
+  min-width: 1200px;
+  border: var(--primary-border-color) solid;
+  background: var(--primary-color);
+  border-width: 1px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.post:hover{
+  background: var(--primary-color-hover);
+}
+.post .tag{
+  background:var(--secondary-color);
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px;
+}
+.post .pfp{
+  border-radius: 100px;
+  max-width: 50px;
+}
+.post .postTopic{
+  font-size: 20px;
+  font-weight: 600;
+}
+.post .postPoster{
+  position: absolute;
+  margin-top: 15px;
+  margin-left:10px;
+}
+.post .timestamp{
+  position: absolute;
+  right:20px;
+  margin-top:15px;
+}
+.post .Att{
+  display: none;
+  max-width: 500px;
+  overflow-x: scroll;
+}
+#likebtn{
+  color:black;
+  border-radius: 10px;
+  height: 30px;
+  width: 80px;
+  border: var(--primary-border-color) solid;
+  border-width: 1px;
+}
+#dislikebtn{
+  color:black;
+  border-radius: 10px;
+  height: 30px;
+  width: 80px;
+  border: var(--primary-border-color) solid;
+  border-width: 1px;
+}
+.msgSec{
+  position: fixed;
+  bottom: -310px;
+  padding-bottom:340px;
+  transition: 0.5s;
+  border-width: 1px;
+  width: 100%;
+  margin-left: 10px;
+  background: var(--primary-background);
+}
+.msgSec:hover{
+  bottom: 0px;
+}
+
+.msgSec #msgBox{
+  position: absolute;
+}
+.msgSec #searchBox{
+  position: absolute;
+  margin-top: 288px;
+  margin-left: 5px;
+}
+.msgSec #searchBox .resetB{
+  background: var(--primary-background);
+  padding-right: 10px;
+  padding-left: 10px;
+  border: var(--primary-border-color) solid;
+  border-width: 1px;
+  font-size: 30px;
+  border-right:none;
+  border-radius: 20px 0px 0px 20px;
+}
+.msgSec #searchBox .submitB{
+  background: var(--primary-background);
+  padding-right: 10px;
+  padding-left: 10px;
+  border: var(--primary-border-color) solid;
+  border-width: 1px;
+  font-size: 30px;
+  border-left:none;
+  border-radius: 0px 20px 20px 0px;
+}
+.msgSec #searchBox input{
+  background: var(--primary-background);
+  border: var(--primary-border-color) solid;
+  width: 270px;
+  height: 41px;
+  border-width: 1px;
+  border-right: none;
+  border-left: none;
+  font-size: 16px;
+}
+.msgSec #searchBox input:focus{
+  outline: none;
+}
+.msgSec #msgBox input{
+  width: 360px;
+  height: 30px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.msgSec #msgBox input:focus{
+  outline: none;
+}
+.msgSec #msgBox textarea:focus{
+  outline: none;
+}
+.msgSec #msgBox textarea{
+  width: 360px;
+  height: 100px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+.msgSec #msgBox button{
+  color:var(--primary-font-color);
+  margin-bottom: 10px;
+  right:-150px;
+  background: var(--secondary-color);
+  border:var(--primary-border-color) solid;
+  left:0px;
+  height: 45px;
+  width: 365px;
+  font-size: 30px;
+  border-width: 1px;
+  border-radius: 2px;
+  margin-left: 10px;
+  transition: 0.2s;
+}
+
+.msgSec #msgBox button:hover{
+  background: var(--primary-color-hover);
+}
+
+.searchSec{
+  position: fixed;
+  background: var(--primary-background);
+  top:5px;
+  left:45px;
+}

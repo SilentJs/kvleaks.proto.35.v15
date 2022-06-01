@@ -1,0 +1,227 @@
+@media (min-width:1510px){
+    #elseMsg .timestamp{
+        right: 30px;
+    }
+}
+@media (max-width:1507px) {
+.MsgD{
+    min-width: 850px;
+}
+#msgForm input{
+    min-width:870px;
+    height: 40px;
+}
+}
+@media (max-width:1370px) {
+    .MsgD{
+        min-width: 750px;
+    }
+    #msgForm input{
+        min-width:750px;
+        height: 40px;
+    }
+    }
+    
+
+@media (max-width:1256px) {
+    #msgForm input{
+        min-width:650px;
+        height: 40px;
+    }
+    .MsgD{
+        min-width: 650px;
+    }
+}
+@media (max-width:1137px) {
+    #msgForm input{
+        min-width:550px;
+        height: 40px;
+    }
+    .MsgD{
+        min-width: 550px;
+    }
+    
+}
+@media (max-width:1054px) {
+
+    .MsgD{
+        min-width: 500px;
+    }
+    #msgForm input{
+        min-width:450px;
+        height: 40px;
+    }
+    
+}
+@media (max-width:1033px) {
+    #msgForm input{
+        min-width:400px;
+        height: 40px;
+    }
+}
+@media (max-width:1000px) {
+
+    .MsgD{
+        min-width: 400px;
+    }
+    
+}
+
+
+/* @media (max-width:1256px) {
+    #msgForm input{
+        width: 60%;
+        height: 30px;
+    }
+}
+@media (max-width:1125px) {
+    #msgForm input{
+        width: 55%;
+        height: 30px;
+    }
+}
+@media (max-width:1024px) {
+    #msgForm input{
+        width: 50%;
+        height: 30px;
+    }
+}*/
+@media (max-width:935px) {
+    .navmain{
+        justify-content: center;
+    }
+    .menu{
+        display: none;
+    }
+    .Rmenu{
+        visibility:visible;
+    }
+    #messages{
+        left:30px
+    }
+    #msgForm input{
+        min-width:750px;
+        height: 40px;
+    }
+
+    .MsgD{
+        min-width: 750px;
+    }
+}
+@media (max-width:865px) {
+    #msgForm input{
+        min-width:650px;
+        height: 40px;
+    }
+    .MsgD{
+        min-width: 650px;
+    }
+}
+@media (max-width:794px) {
+    #msgForm input{
+        min-width:600px;
+        height: 40px;
+    }
+}
+@media (max-width:733px) {
+    gg{
+        display: none;
+    }
+    #msgForm input{
+        min-width:550px;
+        height: 40px;
+    }
+    .MsgD{
+        min-width: 550px;
+    }
+}
+@media (max-width:680px) {
+    #msgForm input{
+        min-width:500px;
+        height: 40px;
+    }
+    .MsgD{
+        min-width: 450px;
+    }
+}
+@media (max-width:645px) {
+    #msgForm input{
+        min-width:480px;
+        height: 40px;
+    }
+    .MsgD{
+        min-width: 450px;
+    }
+}
+@media (max-width:590px){
+    #msgForm input{
+        min-width:430px;
+        height: 40px;
+    }
+}
+
+@media(max-width:562px){
+    #wrongChatBox{
+        max-width: 260px;
+    }
+    #msgForm{
+        margin-bottom: 0px;
+    }
+
+    #messages{
+        left:0px;
+    }
+    .MsgD{
+        min-width: 400px;
+        font-size: 13px;
+    }
+    .fa-solid, .fas {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 200px;
+    }
+    #msgForm input{
+        min-width:400px;
+        height: 40px;
+    }
+}
+@media (max-width:500px){
+    #msgForm input{
+        min-width:370px;
+        height: 40px;
+    }
+}
+
+@media(max-width:470px){
+    #msgForm input{
+       
+        height: 40px;
+    }
+    #EmojiBox{
+     width: 80%;
+    }
+    #msgForm input{
+        min-width:330px;
+        height: 40px;
+    }
+    .MsgD{
+        min-width: 300px;
+    }
+}
+@media (max-width:440px){
+    #msgForm input{
+        min-width:290px;
+        height: 40px;
+    }
+}
+@media(max-width:390px){    
+    #msgForm input{
+        min-width:275px;
+        height: 40px;
+    }
+    .MsgD{
+        min-width: 250px;
+    }
+    .MsgD .timestamp{
+        font-size: 10px;
+    }
+}

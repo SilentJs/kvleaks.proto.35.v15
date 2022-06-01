@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+
+<script defer src="webjs/socket.io.js"></script>
+<script defer src="webjs/news.js"></script>
+<script defer src="webjs/profileLoader.js"></script>
+<link rel="stylesheet" href="css/news.css">
+<link rel="stylesheet" href="css/newadjuster.css">
+<script src="https://kit.fontawesome.com/4f3bffcdd5.js" crossorigin="anonymous"></script>
+<script defer src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="775875900950-0bbipabg64dbtfbrchtrbco7qortlhtf.apps.googleusercontent.com">
+<body>
+  <div class="navmain">
+    <a class="sButton" href="index.html"><i class="fa-solid fa-house-chimney"><gg>Home</gg></i></a>
+    <a href="chat.html"><i class="fa-solid fa-comment-dots"><gg>Chat</gg></i></a>
+    <a class="sButton" href="news.html" style="margin-right: 20px;"><i class="fa-solid fa-newspaper"><gg>News</gg></i></a>
+  </div>
+<div class="postSec">
+    <ul id="posts" class="posts"></ul>
+</div>
+<div class="searchSec">
+
+  <!-- <div class="dropdown">
+      <button class="dropbtn" onclick="showDropdown()">Search Options</button>
+      <div class="dropdown-content">
+        <a href="#" onclick="hideTagsBar()">Search by Topic</a>
+        <a href="#" onclick="hideTopicBar()">Search by Tags</a>
+      </div> -->
+  
+  
+
+  </div>
+</body>
+<div class="msgSec">
+  <form id="msgBox">
+    <button class="pbutton cdButton" type="submit">Post</button><br> 
+    <input id="enterTopic" type="text" placeholder="Topic" name="box1" required autocomplete="off"><br> 
+    <textarea id="enterContent" type="text" placeholder="Your Post's contents..." name="box2" required autocomplete="off" maxlength="2000"></textarea><br>
+    <input id="attach" type="text" placeholder="Attachments : paste the links of the videos/images/audio that you want to send in your post with a gap in between" name="box3" autocomplete="off"><br>
+    <input id="enterTags" type="text" placeholder="Tags: seperated by a hastag or space(example: funny class12 teacher)" name="box4" required autocomplete="off">
+  </form><br>
+  <form id="searchBox" style="display: flex;">
+    <button class="resetB" onclick="clearSBox()" type="reset" ><i class="fa-solid fa-xmark"></i></button>
+    <input type="text" placeholder="Search Posts by Tags" name="box1" id="tagsbar" autocomplete="off">
+    <input type="text" placeholder="Search by Topic" name="box2" style="display: none;"  id="topicbar">
+    <button class="submitB"type="submit"><i class="fa-solid fa-magnifying-glass"></i></button> 
+    </form>
+
+</div>
+</html>

@@ -1,0 +1,378 @@
+:root{
+    --primary-color:#579ffb;
+    --secondary-color:#2180fc;
+    --tertiary-background:#ccc;
+    --primary-background:#fff;
+    --secondary-background:#e2eeff;
+    --primary-font:#fff;
+    --secondary-font:black;
+}
+
+.button {
+    display: block;
+    background-color: var(--primary-color);
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    color: var(--primary-font);
+    position: absolute;
+    top: -7%;
+    bottom: 0;
+    left: 27%;
+    right: 0;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+.button span, .button .icon {
+    display: block;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+}
+.button span {
+    width: 72%;
+    line-height: inherit;
+    font-weight: 400;
+    font-size: 25px;
+    left: 0;
+    transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+.button span:after {
+    content: '';
+    background-color: var(--secondary-color);
+    width: 2px;
+    height: 70%;
+    position: absolute;
+    top: 15%;
+    right: -1px;
+}
+.button .icon {
+    width: 28%;
+    right: 0;
+    transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+.button .icon .fa {
+    font-size: 30px;
+    vertical-align: middle;
+    transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4), height 0.25s ease;
+}
+.button .icon .fa-user-tie {
+    height: 36px;
+}
+.button.success span, .button:hover span {
+    left: -72%;
+    opacity: 1;
+}
+.button.success .icon, .button:hover .icon {
+    width: 100%;
+}
+
+.button.success {
+    background-color: var(--primary-color);
+}
+.button.success .icon .fa-user-tie {
+    display: none;
+}
+.button.success .icon .fa-check {
+    display: inline-block;
+}
+.button:hover {
+    opacity: 1;
+}
+
+.button:active {
+    opacity: 1;
+}
+
+/*Channel Buttons*/
+.channelB {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    font-weight: 700;
+    border-radius: 10px;
+    color: var(--primary-font);
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: var(--primary-color) solid;
+}
+.channelB:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-background);
+    border-radius: 10px;
+    z-index: -2;
+}
+.channelB:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--primary-color);
+    transition: all 0.3s;
+    border-radius: 10px;
+    z-index: -1;
+}
+.channelB:hover {
+    color: var(--primary-font);
+}
+.channelB:hover:before {
+    width: 100%;
+}
+/* optional reset for presentation */
+
+/*autoscroll button*/
+
+.autoScroll{
+    position: absolute;
+    top:-10%;
+}
+.toggle {
+    cursor: pointer;
+    display: inline-block;
+    
+}
+.toggle-switch {
+    display: inline-block;
+    margin-left: 10px;
+    background: var(--tertiary-background);
+    border-radius: 16px;
+    width: 58px;
+    height: 32px;
+    position: absolute;
+    top: -15%;
+    vertical-align: middle;
+    transition: background 0.25s;
+}
+.toggle-switch:before, .toggle-switch:after {
+    content: "";
+}
+.toggle-switch:before {
+    display: block;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: left 0.25s;
+}
+.toggle:hover .toggle-switch:before {
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.toggle-checkbox:checked + .toggle-switch {
+    background: var(--primary-color);
+}
+.toggle-checkbox:checked + .toggle-switch:before {
+    left: 30px;
+}
+.toggle-checkbox {
+    position: absolute;
+    visibility: hidden;
+}
+.toggle-label {
+    margin-left: 70px;
+    position: absolute;
+    top: -15%;
+}
+
+/*Mobile menu channel buttons*/
+.channelR {
+    display: inline-block;
+    padding: 5px 5px;
+    font-weight: 400;
+    border-radius: 5px 5px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: 7px;
+    
+}
+.channelR:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-background);
+    border-radius: 5px;
+    z-index: -2;
+}
+.channelR:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--primary-color);
+    transition: all 0.3s;
+    border-radius: 5px;
+    z-index: -1;
+}
+.channelR:hover {
+    color: var(--primary-font);
+}
+.channelR:hover:before {
+    width: 100%;
+}
+
+/*Profile button for monile menu*/
+.Rbutton {
+    display: block;
+    background-color: var(--primary-color);
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    /* margin: auto; */
+    color: var(--primary-font);
+    position: absolute;
+    top: -10%;
+    bottom: 0;
+    left: 20%;
+    right: 0;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+.Rbutton span, .Rbutton .icon {
+    display: block;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+}
+.Rbutton span {
+    width: 72%;
+    line-height: inherit;
+    font-weight: 400;
+    font-size: 22px;
+    left: 0;
+    transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+.Rbutton span:after {
+    content: '';
+    background-color: var(--secondary-color);
+    width: 2px;
+    height: 70%;
+    position: absolute;
+    top: 15%;
+    right: -1px;
+}
+.Rbutton .icon {
+    width: 28%;
+    right: 0;
+    transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+.Rbutton .icon .fa {
+    font-size: 25px;
+    vertical-align: middle;
+    transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4), height 0.25s ease;
+}
+.Rbutton .icon .fa-user-tie {
+    height: 36px;
+}
+.Rbutton.success span, .Rbutton:hover span {
+    left: -72%;
+    opacity: 1;
+}
+.Rbutton.success .icon, .Rbutton:hover .icon {
+    width: 100%;
+}
+
+.Rbutton.success {
+    background-color: var(--primary-color);
+}
+.Rbutton.success .icon .fa-user-tie {
+    display: none;
+}
+.Rbutton.success .icon .fa-check {
+    display: inline-block;
+}
+.Rbutton:hover {
+    opacity: 1;
+}
+
+.Rbutton:active {
+    opacity: 1;
+}
+/*AutoScroll button for mobile menu*/
+.autoScroll{
+    position: absolute;
+    top:-10%;
+}
+.toggleR {
+    cursor: pointer;
+    display: inline-block;
+    
+}
+.toggle-switchR {
+    display: inline-block;
+    margin-left: 10px;
+    background: var(--tertiary-background);
+    border-radius: 16px;
+    width: 58px;
+    height: 32px;
+    position: absolute;
+    top: -20%;
+    left: 5%;
+    vertical-align: middle;
+    transition: background 0.25s;
+}
+.toggle-switchR:before, .toggle-switchR:after {
+    content: "";
+}
+.toggle-switchR:before {
+    display: block;
+    background: linear-gradient(to bottom, #fff 0%, var(--tertiary-background) 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: left 0.25s;
+}
+.toggleR:hover .toggle-switchR:before {
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.toggle-checkboxR:checked + .toggle-switchR {
+    background: var(--primary-color);
+}
+.toggle-checkboxR:checked + .toggle-switchR:before {
+    left: 30px;
+}
+.toggle-checkboxR {
+    position: absolute;
+    visibility: hidden;
+}
+.toggle-labelR {
+    margin-left: 70px;
+    position: absolute;
+    top: -20%;
+    top: -19%;
+    left: 5%;
+}
+
+
+

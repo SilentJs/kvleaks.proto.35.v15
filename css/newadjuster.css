@@ -1,0 +1,188 @@
+@media (min-width:1680px){
+    .navmain{
+        align-items: left;
+        justify-content: left;
+    }
+    .navmain p{
+        display: flex;
+      }
+}
+@media (max-width:1254px){
+    .post{
+        min-width: 1000px;
+      }
+}
+@media (max-width:1047px){
+    .post{
+        min-width: 900px;
+      }
+}
+@media (max-width:920px){
+    .post{
+        min-width: 800px;
+      }
+}
+@media (max-width:845px){
+    .post{
+        min-width: 700px;
+      }
+
+}
+
+@media (min-width:635px){
+    .msgSec #msgBox input{
+        width: 586px;
+
+      }
+      .msgSec #msgBox textarea{
+      width: 588px;
+
+      }
+      .msgSec #msgBox button{
+          width:597px;
+
+      }
+      .msgSec #searchBox input{
+        width: 660px;
+
+      }
+      .msgSec #searchBox input{
+        width: 505px;
+
+    }
+}
+@media (min-width:770px){
+    .msgSec #msgBox input{
+      width: 741px;
+    }
+    .msgSec #msgBox textarea{
+    width: 743px;
+    }
+    .msgSec #msgBox button{
+        width:751px;
+    }
+    .msgSec #searchBox input{
+        width: 660px;
+
+    }
+}
+
+@media (max-width:770px){
+    gg{
+        display: none;
+    }
+
+    .postSec{
+        margin-top: 10px;
+    }
+    .post .timestamp{
+        font-size: 12px;
+    }
+    .post .postPoster{
+        font-size: 12px;
+    }
+    .post{
+        min-width: 600px;
+      }
+}
+@media (max-width:670px){
+
+    .postSec{
+        margin-top: 10px;
+    }
+    .post .timestamp{
+        font-size: 12px;
+    }
+    .post .postPoster{
+        font-size: 12px;
+    }
+    .post{
+        min-width: 500px;
+      }
+}
+@media (max-width:570px){
+    .post{
+        margin-left: -20px;
+        min-width: 400px;
+      }
+      .msgSec{
+          margin-left:0px;
+      }
+      .msgSec #msgBox input{
+
+        margin-left:5px;
+      }
+      .msgSec #msgBox textarea{
+
+      margin-left:5px;
+      }
+      .msgSec #msgBox button{
+     
+          margin-left:5px;
+      }
+}
+@media (max-width:430px){
+    .post{
+        max-width: 100px;
+        min-width: 335px;
+      }
+      .msgSec{
+        margin-left:-10px;
+    }
+}
+/*HEIGHT ADJUSTERS*/
+@media(min-height:600px){
+    .postSec{
+        max-height: 550px;
+    }
+
+}
+@media(min-height:650px){
+    .postSec{
+        max-height: 600px;
+    }
+
+}
+
+@media(min-height:700px){
+    .postSec{
+        max-height: 650px;
+    }
+
+}
+@media(min-height:750px){
+    .postSec{
+        max-height: 700px;
+    }
+
+}
+@media(min-height:800px){
+    .postSec{
+        max-height: 750px;
+    }
+
+}
+@media(min-height:850px){
+    .postSec{
+        max-height: 800px;
+    }
+
+}
+@media(min-height:900px){
+    .postSec{
+        max-height: 850px;
+    }
+
+}
+@media(min-height:950px){
+    .postSec{
+        max-height: 905px;
+    }
+
+}
+@media(min-height:1000px){
+    .postSec{
+        max-height: 950px;
+    }
+
+}

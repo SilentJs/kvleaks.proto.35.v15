@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div class="menu">
+        <div class="title">Channels</div>
+        <ul class="nav">
+            <script src="https://kit.fontawesome.com/4f3bffcdd5.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+    </script>
+           <label class="toggle">
+           <a class="autoswitch">       
+           </a>
+           <span class="toggle-label">AutoScroll</span>
+           </label>
+          <a class="button" role="button" onclick="getProfileData();">
+            <span>Profile</span>
+            <div class="icon">
+                <i class="fa fa-solid fa-user-tie"></i></i>
+            </div>
+        </a>
+          <li><a href="#" class="channelB" onclick="joinChat('allchat')">All Chat</a></li>
+          <li><a href="#" class="channelB" onclick="joinChat('class12')">Class 12</a></li>
+          <li><a href="#" class="channelB" onclick="joinChat('class11')">class 11</a></li>
+          <li><a href="#" class="channelB" onclick="joinChat('class10')">Class 10</a></li>
+          <li><a href="#" class="channelB" onclick="joinChat('class9')">Class 9</a></li>
+          <li><a href="#" class="channelB" onclick="joinChat('class8')">Class 8</a></li>
+          <li><a href="#" class="channelB" onclick="joinChat('class7')">Class 7</a></li>
+          <li><a href="#" class="channelB" onclick="joinChat('class6')">Class 6</a></li>
+          <li><a href="#" class="channelB" onclick="joinChat('class5')">Class 5</a></li>
+        </ul>
+    </div>
+    <div class="Rmenu">
+        <div class="title">Channels</div>
+        <ul class="nav">
+            <label class="toggleR">
+                <a class="autoswitchR"> 
+                </a>
+                <span class="toggle-labelR">AutoScroll</span>
+                </label>
+        <a class="Rbutton" role="button">
+            <span>Profile</span>
+            <div class="icon">
+                <i class="fa fa-solid fa-user-tie"></i></i>
+            </div>
+        </a>
+          <li><a href="#" class="channelR" onclick="joinChat('allchat')">All Chat</a></li>
+          <li><a href="#" class="channelR" onclick="joinChat('class12')">Class 12</a></li>
+          <li><a href="#" class="channelR" onclick="joinChat('class11')">class 11</a></li>
+          <li><a href="#" class="channelR" onclick="joinChat('class10')">Class 10</a></li>
+          <li><a href="#" class="channelR" onclick="joinChat('class9')">Class 9</a></li>
+          <li><a href="#" class="channelR" onclick="joinChat('class8')">Class 8</a></li>
+          <li><a href="#" class="channelR" onclick="joinChat('class7')">Class 7</a></li>
+          <li><a href="#" class="channelR" onclick="joinChat('class6')">Class 6</a></li>
+          <li><a href="#" class="channelR" onclick="joinChat('class5')">Class 5</a></li>
+        </ul>
+    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script defer src="webjs/client.js"></script>
+    <!-- <script defer src="webjs/index.js"></script> -->
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/adjuster.css">
+    <link rel="stylesheet" href="css/buttons.css">
+</head>
+
+<body>
+    <div id="messages">
+        <div id=msg></div>
+    <div class="messageBox">
+    <form id="msgForm" action="">
+        <a id="EmojiBox"></a>
+        <input type="text" placeholder="Message..." name="msg" style="position:static;" autocomplete="off" required>
+        <a type="button" id="emojiB" onclick="emojiMenu()" class="trigger"><i class="fa-regular fa-face-smile"></i></a> 
+        <a type="submit" class="trigger"><i class="fa-solid fa-paper-plane"></i></a>
+    </form>
+</div>    
+</div>
+<div class="navmain">
+    <a class="sButton" href="index.html"><i class="fa-solid fa-house-chimney"><gg>Home</gg></i></a>
+    <a href="chat.html"><i class="fa-solid fa-comment-dots"><gg>Chat</gg></i></a>
+    <a class="sButton" href="news.html" style="margin-right: 20px;"><i class="fa-solid fa-newspaper"><gg>News</gg></i></a>
+  </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title rel="stylesheet">kvdrdo-unofficial</title>
+        <link rel="stylesheet" href="global.css">
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#"><img src="images/logo.png"  class="logo"></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Chat</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>It's not just any Coffee<br>
+                    It's <br><span>Starbucks</span> coffee</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="imgBox">
+                    <img src="images/img1.png" class="starbucks">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png');changeCircleColor('#a70000')"></li>
+                <li><img src="images/thumb2.png"onclick="imgSlider('images/img2.png');changeCircleColor('#eb7495')"></li>
+                <li><img src="images/thumb3.png"onclick="imgSlider('images/img3.png');changeCircleColor('#d752b1')"></li>
+            </ul>
+            <ul class="sci">
+                <li><img class="facebook" src="http://assets.stickpng.com/images/60fea6c83d624000048712b7.png"></li>
+                <li><img class="twitter" src="https://icon-library.com/images/twitter-icon-white-transparent/twitter-icon-white-transparent-9.jpg"></li>
+                <li><img class="instagram" src="images/instagram.png"></li>
+            </ul>
+            <script>
+                function imgSlider(any){
+                    document.querySelector('.starbucks').src=any;
+                }
+                function changeCircleColor(color){
+                    const circle = document.querySelector('.circle');
+                    circle.style.background = color
+                }
+            </script>
+        </section>
+    </body>
+</html>
